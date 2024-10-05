@@ -1,0 +1,21 @@
+print(" ")#espacio a agregar
+print("Lira Hernandez Dayana Yamileth:")#datos del realizador 
+print("Indica materias y calificaciones")#descripcion del codigo
+print(" ")#espacio a agregar
+
+materias = ["Humanidades", "English", "Lengua", "Quimica"]
+#variables almacenadas a mostrar
+for materia in materias:#Mostrar mensaje para cada materia
+    print(f"Estoy cursando {materia}")#imprime el mensaje
+
+calificaciones = {}
+
+for materia in materias:#pedir calificacion para cada materia
+    calificacion = float(input(f"Ingrese la calificacion para {materia}: "))
+    #almacenar la calificacion 
+    calificaciones[materia] = calificacion
+#mostrar las calificaciones
+for materia, calificacion in calificaciones.items():
+    #imprimir la materia y calificacion obtenida
+    print(f"En {materia} has obtenido {calificacion}")
+print("")
